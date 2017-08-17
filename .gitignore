@@ -19,3 +19,4 @@ resources/assets/themes/*
 .idea/
 .phpstorm.meta.php
 public/img/posts/
+readme.md

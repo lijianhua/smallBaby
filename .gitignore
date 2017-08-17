@@ -21,3 +21,5 @@ resources/assets/themes/*
 public/img/posts/
 readme.md
 bootstrap/
+storage
+public

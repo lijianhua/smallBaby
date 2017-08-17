@@ -15,7 +15,7 @@ class PagesController extends Controller
      * Display the homepage.
      */
     public function home() {
-        $posts = PostsRepo::getPosts(10, 'owner');
+        $posts = PostsRepo::getPosts(null, 'owner');
         return view(config('theme.default.pages').'.index')->withPosts($posts);
     }
 
@@ -34,7 +34,7 @@ class PagesController extends Controller
      * @param \App\Category $category
      */
     public function category(Category $category){
-        $posts = PostsRepo::getCategoryPosts($category, 10, 'owner');
+        $posts = PostsRepo::getCategoryPosts($category, '', 'owner');
         return view(config('theme.default.pages').'.category')->withPosts($posts);
     }
 }

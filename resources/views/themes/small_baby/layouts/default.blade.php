@@ -33,7 +33,9 @@
 
 <body>
 
-@include('themes.small_baby.includes.navbar')
+    <a class="" href="{{route('web.home')}}"> 
+        <img src="{{ asset('css/small_baby/1.png') }}" style='text-align:center'/>
+    </a>
 
 <!-- Page Header -->
 @yield("header")

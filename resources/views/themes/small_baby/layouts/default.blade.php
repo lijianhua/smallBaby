@@ -31,8 +31,12 @@
 
 <style type="text/css" media="screen">
 .img_wrap{
+    margin-top: 20px;
     vertical-align: middle;
     text-align: center;
+}
+#fh5co-main {
+    padding-top: 0em;
 }
 </style>
 </head>
@@ -40,12 +44,11 @@
 <body>
 <div class='img_wrap'>
     <a href="{{route('web.home')}}">
-        <img src="{{ asset('css/small_baby/1.png') }}" style='text-align:center;'/>
+        <img src="{{ asset('css/small_baby/1.png') }}" style='text-align:center;width:340px'/>
     </a>
 </div>
 
 <!-- Page Header -->
-@yield("header")
 <!-- Main Content -->
 <div id="fh5co-main">
     <div class="container">

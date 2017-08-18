@@ -24,7 +24,7 @@
 	<script src="{{ asset('js/small_baby/modernizr-2.6.2.min.js') }}"></script>
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
+	<script src="{{ asset('js/small_baby/respond.min.js') }}"></script>
 	<![endif]-->
 
     <!-- Theme CSS -->
@@ -32,10 +32,11 @@
 </head>
 
 <body>
-
+<div>
     <a class="" href="{{route('web.home')}}"> 
-        <img src="{{ asset('css/small_baby/1.png') }}" style='text-align:center'/>
+        <img src="{{ asset('css/small_baby/1.png') }}" style='text-align:center;width:350px;'/>
     </a>
+</div>
 
 <!-- Page Header -->
 @yield("header")

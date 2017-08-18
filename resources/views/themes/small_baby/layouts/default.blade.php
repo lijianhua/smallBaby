@@ -29,12 +29,18 @@
 
     <!-- Theme CSS -->
 
+<style type="text/css" media="screen">
+.img_wrap{
+    vertical-align: middle;
+    text-align: center;
+}
+</style>
 </head>
 
 <body>
-<div>
-    <a class="" href="{{route('web.home')}}"> 
-        <img src="{{ asset('css/small_baby/1.png') }}" style='text-align:center;width:350px;'/>
+<div class='img_wrap'>
+    <a href="{{route('web.home')}}">
+        <img src="{{ asset('css/small_baby/1.png') }}" style='text-align:center;'/>
     </a>
 </div>
 
